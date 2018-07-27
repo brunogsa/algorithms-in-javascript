@@ -1,0 +1,21 @@
+{
+  "name": "algorithms-in-javascript",
+  "version": "1.0.0",
+  "description": "Here, I store my resolution of some algorithm challenges",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunogsa/algorithms-in-javascript.git"
+  },
+  "keywords": [
+    "algorithm",
+    "big-o",
+    "javascript"
+  ],
+  "author": "Bruno Agostini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunogsa/algorithms-in-javascript/issues"
+  },
+  "homepage": "https://github.com/brunogsa/algorithms-in-javascript#readme"
+}
