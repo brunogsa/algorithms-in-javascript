@@ -3,7 +3,7 @@ function reverseArrayInPlace(array) {
    * Solution Performance:
    *
    * Time -> O (n) / Linear
-   * Space -> O (1) / Linear
+   * Space -> O (1) / Constant
    */
   for (let i = 0; i < array.length / 2; i++) {
     const oppositeIndex = array.length - i - 1;
