@@ -4,7 +4,7 @@
   "description": "Here, I store my resolution of some algorithm (and data structures) challenges",
   "main": "index.js",
   "scripts": {
-    "test": "jest --bail --passWithNoTests --runInBand --projects tests/"
+    "test": "jest --verbose --bail --passWithNoTests --runInBand --projects tests/"
   },
   "repository": {
     "type": "git",
