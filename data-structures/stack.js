@@ -21,6 +21,7 @@ class Stack {
   }
 
   peek() {
+    if (this.isEmpty()) throw new Error('Stack is empty');
     return this.list.at(-1);
   }
 

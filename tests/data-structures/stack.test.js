@@ -91,6 +91,14 @@ describe('stack.js', () => {
 
 
   describe('.peek()', () => {
+    it('should throw an error if empty', () => {
+      const stack = new Stack();
+
+      expect(() => {
+        stack.peek();
+      }).toThrow();
+    });
+
     it('should maintain the size', () => {
       const stack = new Stack();
 
