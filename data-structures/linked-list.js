@@ -7,8 +7,6 @@ class Node {
 
 class SinglyLinkedList {
   constructor() {
-    this.list = [];
-
     this.numOfNodes = 0;
     this.head = null;
     this.tail = null;
@@ -34,7 +32,6 @@ class SinglyLinkedList {
     }
 
     this.numOfNodes++;
-    this.list.push(elem);
   }
 
   delete(elem) {
@@ -57,13 +54,14 @@ class SinglyLinkedList {
         current.next = undefined;
         current = undefined;
 
+        this.numOfNodes--;
         break;
       }
 
+      previous = current;
       current = current.next;
     }
 
-    this.numOfNodes--;
     return valueToReturn;
   }
 
@@ -81,9 +79,17 @@ class SinglyLinkedList {
   }
 
   toString() {
+    const nodes = [];
+
+    let current = this.head;
+    while(current !== null) {
+      nodes.push(current);
+      current = current.next;
+    }
+
     console.log(
       'Head ->',
-      this.list.join(' -> '),
+      nodes.map(node => node.value).join(' -> '),
       '<- Tail',
     );
   }
