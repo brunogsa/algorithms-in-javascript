@@ -49,7 +49,9 @@ class Queue {
     const values = this.list.filter(elem => elem !== undefined);
 
     console.log(
-      JSON.stringify(values),
+      'Head ->',
+      values.join(', '),
+      '<- Tail',
     );
   }
 }

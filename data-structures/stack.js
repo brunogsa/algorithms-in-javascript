@@ -27,7 +27,8 @@ class Stack {
 
   toString() {
     console.log(
-      JSON.stringify(this.list),
+      this.list.join(', '),
+      '<- Top',
     );
   }
 }
