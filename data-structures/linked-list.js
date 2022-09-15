@@ -50,6 +50,7 @@ class SinglyLinkedList {
 
         if (current === this.tail) this.tail = previous;
 
+        // Mark as undefined, so garbage collector do its job later
         current.value = undefined;
         current.next = undefined;
         current = undefined;
