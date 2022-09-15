@@ -43,7 +43,7 @@ describe('stack.js', () => {
     it.todo('should have O(1) time complexity');
   });
 
-  describe('.push()', () => {
+  describe('.push(elem)', () => {
     it('should increase size by 1', () => {
       const stack = new Stack();
       expect(stack.size()).toBe(0);

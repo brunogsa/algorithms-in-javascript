@@ -43,7 +43,7 @@ describe('queue.js', () => {
     it.todo('should have O(1) time complexity');
   });
 
-  describe('.enqueue()', () => {
+  describe('.enqueue(elem)', () => {
     it('should increase size by 1', () => {
       const queue = new Queue();
       expect(queue.size()).toBe(0);
